@@ -70,6 +70,7 @@ main{
 .intro-heading {
   margin: 2rem 1rem 1rem 1rem;
   padding: 0.8rem 0.5rem ;
+  word-spacing: -0px;
   letter-spacing: -2px;
   border-radius: 1rem;
   font-size: 2em;
@@ -182,6 +183,9 @@ main{
 .courses-section{
   background: linear-gradient(to right,rgba(26, 64, 107),rgb(27, 122, 124));
 
+}
+.courses-heading{
+  padding-left: 1rem;
 }
 .courses-heading,.courses-para,.courses-subscript{
   color: white;
