@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-align: start end;
+}
+body {
+  height: 200vh;
+  overflow-x: hidden;
+}
+header {
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 5.5em;
+  /* border: 1px solid red; */
+  box-shadow: 0 0 1.5px 0px rgb(0, 0, 0, 0.5);
+}
+.link {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-family: 'Alaska', sans-serif;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  margin-right: 15px;
+  border-bottom: 2px solid currentColor;
+  margin-bottom: 0;
+}
+.link:hover {
+  border-bottom: none;
+  color: black;
+  font-weight: 550;
+}
+.link-1 {
+  color: red;
+}
+.link-2 {
+  color: rgb(37, 91, 152);
+}
+.link-3 {
+  color: rgb(221, 14, 66);
+}
+.link-4 {
+  color: rgb(26, 127, 120);
+}
+.link-5 {
+  color: rgb(123, 45, 109);
+}
+.link-6 {
+  color: rgb(219, 44, 0);
+  margin: 1rem;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.intro-section{  
+}
+
+.intro-heading {
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 0.8rem 0.5rem ;
+  letter-spacing: -2px;
+  border-radius: 1rem;
+  font-size: 2em;
+  font-weight: 900;
+  background: linear-gradient(145deg, rgb(221, 18, 64), rgb(254, 96, 52));
+  color: white;
+  font-family: 'Alaska', sans-serif;
+  line-height: 2rem;
+  font-stretch: 100%;
+  text-size-adjust: 100%;
+}
+.intro-image{
+ margin: 0.5rem 2rem;
+ max-width: 85%;
+ box-shadow: 0 0 10px 5px  rgba(0,0,0,0.1);
+ border-radius: 0.5rem;
+}
+.intro-explanation{
+  margin: 0  1.5rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.3px;
+  font-family: 'Alaska',sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(0,0,0,0.8);
+}
+.para-2{
+  margin: 0.5rem 0 0 0 ;
+}
+
+.sub-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background: rgb(253, 236, 240);
+  margin: 2.5rem 0;
+  padding: 1rem 0 2rem 1rem;
+}
+.sub-section>*{
+  font-size: 1.2rem;
+  font-family:'Alaska',sans-serif;
+  font-weight: 400;
+}
+.sub-header{
+  margin: 2.5rem 1.5rem;
+}
+.sub-heading{
+  color: rgb(221, 14, 66);
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: fit-content;
+}
+.sub-subscript{
+  position: absolute;
+  right: 0;
+  margin: 0 0 0 5rem;
+  color: rgba(0,0,0,0.5);
+  font-weight: 400;
+  line-height: 0;
+  font-size: 1rem;
+  width: max-content;
+}
+.sub-para{
+  padding: 0.5rem 1rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  letter-spacing: px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.8);
+  font-family: 'Alaska',sans-serif;
+}
+.sub-button{
+  padding: 1rem 2rem;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  background: rgb(221, 14, 66);
+  width: max-content;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 550;
+  scroll-behavior: smooth;
+  transition: 150ms;
+  letter-spacing: 1px;
+}
+.sub-button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 20px rgba(0,0,0,1);
+  background: rgba(currentColor,1) ;
+}
+
+.article-section{
+  background: none;
+}
+.article-heading{
+  color: rgba(26, 64, 107,0.9);
+}
+.article-button{
+  background: linear-gradient(to right,rgba(26, 64, 107),rgb(27, 122, 124));
+
+}
+.courses-para>p{
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+}
+.courses-section{
+  background: linear-gradient(to right,rgba(26, 64, 107),rgb(27, 122, 124));
+
+}
+.courses-heading,.courses-para,.courses-subscript{
+  color: white;
+}
+.courses-button{
+  background:white ;
+  color: rgb(51, 134, 133);
+}
+.courses-link{
+  color: white;
+}
+.courses-link:hover{
+  text-decoration: none;
+}
+.patreon-section{
+  background: white;
+}
+.patreon-heading{
+  color: rgb(225, 41, 17);
+}
+.patreon-button{
+  background:rgb(225, 41, 17) ;
+}
+
+
+
+
+
+
+
+/* ----------------------------------------------*/
+/* ----------MEDIA QUERY ---------------------*/
+/* -------------------------------------------- */
+@media (max-width: 510px) {
+  ul {
+    height: 7.5em;
+  }
+  .link {
+    padding-right: 1em;
+    font-size: 0.8em;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 10em;
+  }
+}
+@media (min-width:590px){
+
+      .intro-section{
+        display: grid;
+        grid-template-areas: 'image heading' 'explanation explanation';
+        position: relative;
+        margin: 3rem 1rem 0 1rem;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 1rem;
+
+      }
+      .intro-section::before{
+        position: absolute;
+        content: '';
+        inset: -0.5em;
+        grid-row: 1/2;
+        background: linear-gradient(145deg, rgb(221, 18, 64), rgb(254, 96, 52));
+        z-index: -1;
+        border-radius: 1rem;
+      }
+      
+      .intro-image{
+        grid-area: image;
+        position: relative;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: inherit;
+        max-height: 24rem;
+        max-width: 17.5rem;
+        min-width: 14rem;
+        width: 25vw;
+        margin: 0 auto;
+      }
+      
+      .intro-heading{
+        grid-area: heading;
+        background: none;
+        position: relative;
+        padding: 1rem;
+        font-size: 2.8rem;
+        line-height: 3rem;
+        letter-spacing: -2px;
+        margin: 0;
+
+      }
+      .intro-explanation{
+        grid-area: explanation;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin: 0;
+
+      }
+      .para-1,.para-2{
+        line-height: 2.2rem;
+      }
+
+
+      .sub-heading{
+        font-size: 3.5rem;
+      }
+      .sub-subscript{
+        margin-left: 9rem;
+      }
+
+
+
+}
+@media (min-width:590px){
+  .intro-heading{
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  .sub-para{
+    line-height: 2rem;
+  }
+  
+}
+@media (min-width:865px){
+  .intro-section{
+    grid-template-areas: 'image heading' 'image explanation';
+    max-width: 850px;
+    grid-row-gap: 0.8rem;
+  }
+  .intro-image{
+    grid-area: image;
+    max-height: 20rem;
+    max-width: 10rem;
+  }
+  .intro-heading{
+    grid-area: heading;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -2px;
+  }
+  .intro-explanation{
+    grid-area: explanation;
+  }
+  .sub-div{
+    width: 100%;
+  }
+  .sub-header{
+    padding: 0;
+    margin: 0;
+  }
+  .sub-para{
+    max-width: 80ch;
+    line-height: 2rem;
+    padding: 3rem 0 0 0  ;
+    margin: 0;
+    margin-bottom: 1rem;
+    min-height: 10rem;
+  }
+  .sub-button{
+    margin: 0;
+  }
+  .sub-section{
+    /* padding: 2rem 8rem; */
+  }
+}
