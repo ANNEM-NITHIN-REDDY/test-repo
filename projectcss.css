@@ -346,7 +346,7 @@ main{
   .sub-button{
     margin: 0;
   }
-  .sub-section{
-    /* padding: 2rem 8rem; */
+  .courses-heading{
+    padding-left: 0rem;
   }
 }
