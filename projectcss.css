@@ -12,17 +12,9 @@ body {
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
 }
-body::after{
-  content: '';
-  height: 10px;
-  width: 10px;
-  background: red;
-  position: sticky;
-  bottom: 0;
-  right: 0;
-}
 .header {
 }
+
 .nav-ul {
   display: flex;
   flex-direction: row;
@@ -261,6 +253,21 @@ main{
   font-family: 'Alaska',sans-serif;
   font-weight: 500;
   color: rgba(0,0,0,0.8);
+}
+
+.sticky-button{
+  position: sticky;
+  bottom: 0;
+  left: 85em;
+  background: white;
+  width: max-content;
+}
+.sticky>img{
+  /* height: 100%;
+  width: 100%; */
+}
+.sticky-button{
+  float: right;
 }
 
 
