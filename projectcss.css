@@ -70,15 +70,13 @@ main{
 .intro-heading {
   margin: 2rem 1rem 1rem 1rem;
   padding: 0.8rem 0.5rem ;
-  word-spacing: -0px;
-  letter-spacing: -2px;
   border-radius: 1rem;
   font-size: 2em;
-  font-weight: 900;
+  font-weight: 1000;
   background: linear-gradient(145deg, rgb(221, 18, 64), rgb(254, 96, 52));
   color: white;
   font-family: 'Alaska', sans-serif;
-  line-height: 2rem;
+  line-height: 1.9rem;
   font-stretch: 100%;
   text-size-adjust: 100%;
 }
