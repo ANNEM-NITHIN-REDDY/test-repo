@@ -11,7 +11,6 @@ body {
   text-rendering: optimizeSpeed;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
-  border: 1px solid red;
 }
 body::after{
   content: '';
@@ -20,7 +19,7 @@ body::after{
   background: red;
   position: sticky;
   bottom: 0;
-  right: -30px;
+  right: 0;
 }
 .header {
 }
@@ -100,9 +99,9 @@ main{
   color: white;
   font-family: 'Alaska', sans-serif;
   line-height: 1.9rem;
-  letter-spacing: -1.5px;
-  word-spacing: -3px;
-}
+  /* letter-spacing: -10px;
+  word-spacing: -10px;*/
+} 
 .intro-image{
  margin: 0.5rem 2rem;
  max-width: 85%;
