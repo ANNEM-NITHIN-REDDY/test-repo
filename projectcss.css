@@ -156,6 +156,7 @@ main{
   scroll-behavior: smooth;
   transition: 150ms;
   letter-spacing: 1px;
+  text-rendering: optimizeSpeed;
 }
 .sub-button:hover{
   cursor: pointer;
