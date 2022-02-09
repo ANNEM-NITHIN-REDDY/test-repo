@@ -19,7 +19,6 @@ ul {
   justify-content: center;
   height: 6.5em;
   /* border: 1px solid red; */
-  box-shadow: 0 0 1.5px 0px rgb(0, 0, 0, 0.5);
 }
 .link {
   text-decoration: none;
@@ -64,7 +63,13 @@ main{
   flex-direction: column;
 }
 
-.intro-section{ 
+
+.intro-div{
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 0 0 ;
 }
 
 .intro-heading {
@@ -318,20 +323,21 @@ main{
 @media (min-width:865px){
   .intro-section{
     grid-template-areas: 'image heading' 'image explanation';
-    max-width: 850px;
+    max-width: 950px;
     grid-row-gap: 0.8rem;
     margin: 3rem 1rem 0 2rem;
   }
   .intro-image{
     grid-area: image;
-    max-height: 20rem;
-    max-width: 10rem;
+    max-height: 22rem;
+    max-width: 16rem;
+    object-fit: cover;
   }
   .intro-heading{
     grid-area: heading;
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 3rem;
-    letter-spacing: -2px;
+    letter-spacing: -px;
   }
   .intro-explanation{
     grid-area: explanation;
