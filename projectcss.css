@@ -320,6 +320,7 @@ main{
     grid-template-areas: 'image heading' 'image explanation';
     max-width: 850px;
     grid-row-gap: 0.8rem;
+    margin: 0;
   }
   .intro-image{
     grid-area: image;
