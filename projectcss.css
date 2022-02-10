@@ -5,12 +5,18 @@
   scroll-behavior: smooth;
   scroll-snap-align: start end;
 }
+html{
+  font-size: 100%;
+}
 body {
   height: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   text-rendering: optimizeSpeed;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+  font-family : Alaska,sans-serif;
 }
 .header {
 }
@@ -29,7 +35,7 @@ body {
 .link {
   text-decoration: none;
   font-size: 1rem;
-  font-family: 'Alaska', sans-serif;
+  font-family: Alaska, sans-serif;
   font-weight: 550;
   letter-spacing: 0.5px;
   margin-right: 15px;
@@ -89,7 +95,7 @@ main{
   font-weight: 1000;
   background: linear-gradient(145deg, rgb(221, 18, 64), rgb(254, 96, 52));
   color: white;
-  font-family: 'Alaska', sans-serif;
+  font-family: Alaska, sans-serif;
   line-height: 1.9rem;
   /* letter-spacing: -10px;
   word-spacing: -10px;*/
@@ -104,7 +110,7 @@ main{
   margin: 0  1.5rem;
   line-height: 1.6rem;
   letter-spacing: -0.3px;
-  font-family: 'Alaska',sans-serif;
+  font-family: Alaska,sans-serif;
   font-size: 1.1rem;
   font-weight: 500;
   color: rgba(0,0,0,0.8);
@@ -125,7 +131,7 @@ main{
 }
 .sub-section>*{
   font-size: 1.2rem;
-  font-family:'Alaska',sans-serif;
+  font-family:Alaska,sans-serif;
   font-weight: 400;
 }
 .sub-header{
@@ -152,13 +158,12 @@ main{
   padding: 0.5rem 1rem;
   line-height: 1.8rem;
   font-size: 1.1rem;
-  letter-spacing: px;
   font-weight: 500;
   color: rgba(0,0,0,0.8);
-  font-family: 'Alaska',sans-serif;
+  font-family: Alaska,sans-serif;
 }
 .sub-button{
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
   margin: 0 1.5rem;
   text-decoration: none;
   background: rgb(221, 14, 66);
@@ -242,32 +247,29 @@ main{
 .footer-link{
   text-decoration: none;
   color: #4D4D4D;
-  font-weight: 1000;
+  font-weight: 800;
   border-bottom: 2px solid currentColor;
   margin: 1rem 1rem 0 0;
 }
+.footer-link:hover{
+  border-bottom: none;
+  color: rgb(225, 41, 17);
+}
+
 .footer-license-para{
   padding: 2rem;
 }
 .footer-para,.footer-license-para{
-  font-family: 'Alaska',sans-serif;
+  font-family: Alaska,sans-serif;
   font-weight: 500;
   color: rgba(0,0,0,0.8);
 }
 
 .sticky-button{
   position: sticky;
-  bottom: 0;
-  left: 85em;
   background: white;
   width: max-content;
-}
-.sticky>img{
-  /* height: 100%;
-  width: 100%; */
-}
-.sticky-button{
-  float: right;
+  left: 30em;
 }
 
 
@@ -289,13 +291,11 @@ main{
   }
 }
 @media (min-width:620px){
-
       .intro-section{
         display: grid;
         grid-template-areas: 'image heading' 'explanation explanation';
         position: relative;
         margin: 3rem 1rem 0 2rem;
-        
         grid-row-gap: 1.5rem;
         grid-column-gap: 1rem;
 
@@ -363,11 +363,11 @@ main{
   .intro-heading{
     font-size: 2.5rem;
     line-height: 2.5rem;
-    letter-spacing: -px;
   }
   .sub-para{
     line-height: 2rem;
   }
+  
   
 }
 
@@ -420,4 +420,5 @@ main{
   .courses-heading{
     padding-left: 0rem;
   }
+ 
 }
