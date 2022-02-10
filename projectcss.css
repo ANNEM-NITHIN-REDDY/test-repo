@@ -278,7 +278,7 @@ main{
 /* ----------------------------------------------*/
 /* ----------MEDIA QUERY ---------------------*/
 /* -------------------------------------------- */
-@media (max-width: 510px) {
+@media only screen and (max-width: 510px) {
   ul {
     height: 9em;
   }
@@ -290,7 +290,7 @@ main{
     margin-top: 10em;
   }
 }
-@media (min-width:620px){
+@media only screen and (min-width:640px){
       .intro-section{
         display: grid;
         grid-template-areas: 'image heading' 'explanation explanation';
@@ -375,7 +375,7 @@ main{
 
 
 
-@media (min-width:865px){
+@media only screen and (min-width:960px){
   .intro-section{
     grid-template-areas: 'image heading' 'image explanation';
     max-width: 950px;
@@ -390,7 +390,7 @@ main{
   }
   .intro-heading{
     grid-area: heading;
-    font-size: 2.8rem;
+    /* font-size: 2.8rem; */
     line-height: 3rem;
     letter-spacing: -2px;
     word-spacing: -5px;
