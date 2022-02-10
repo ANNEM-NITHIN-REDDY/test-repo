@@ -14,11 +14,16 @@ body {
   text-rendering: optimizeSpeed;
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
-  line-height: 1.6;
+  /* line-height: 1.6; */
   letter-spacing: -0.5px;
   font-family : Alaska,sans-serif;
 }
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+  height: 5rem;
 }
 
 .nav-ul {
@@ -30,9 +35,11 @@ body {
   height: 6.5em;
   box-shadow:  0px 4px 30px  rgba(0,0,0,0.1);
   width: auto;
+  background-color: white;
   /* border: 1px solid red; */
 }
 .link {
+
   text-decoration: none;
   font-size: 1rem;
   font-family: Alaska, sans-serif;
@@ -81,7 +88,7 @@ main{
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 3rem 0 0 0 ;
+  padding: 5rem 0 0 0 ;
   /* box-shadow: inset 0 2px 30px  rgba(0,0,0,0.1); */
   
   z-index: -1;
@@ -233,7 +240,7 @@ main{
   text-align: center;
   background: rgb(222, 222, 222);
   padding: 2.5rem;
-  margin: 7rem 0 0 0 ;
+  margin: 3rem 0 0 0 ;
   width: 100%;
 }
 .footer-ul{
@@ -289,8 +296,19 @@ main{
     padding: 0;
     margin-top: 10em;
   }
+  
 }
-@media only screen and (min-width:39em){
+@media only screen and (min-width:40em){
+  :root{
+    font-size: 110%;
+  }
+      .header{
+          /* overflow: hidden; */
+        }
+      .intro-div{
+          padding: 4rem 0 0 0  ;
+          
+        }
       .intro-section{
         display: grid;
         grid-template-areas: 'image heading' 'explanation explanation';
@@ -298,7 +316,6 @@ main{
         margin: 3rem 1rem 0 2rem;
         grid-row-gap: 1.5rem;
         grid-column-gap: 1rem;
-
       }
       .intro-section::before{
         position: absolute;
@@ -328,11 +345,11 @@ main{
       .intro-heading{
         grid-area: heading;
         background: none;
-        position: relative;
-        padding: 1rem;
-        font-size: 2.8rem;
-        line-height: 3rem;
+        /* position: relative; */
+        /* padding: 1rem; */
+        /* font-size: 2.8rem; */
         letter-spacing: -1px;
+        line-height: 1.3;
         margin: 0;
 
       }
@@ -347,11 +364,6 @@ main{
         line-height: 2.2rem;
       }
 
-
-      .sub-heading{
-        font-size: 3.5rem;
-
-      }
       .sub-subscript{
         margin-left: 9rem;
       }
@@ -360,10 +372,6 @@ main{
         line-height: 1.6rem;
         /* margin: 0; */
       }
-  .intro-heading{
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
   .sub-para{
     line-height: 2;
   }
@@ -379,24 +387,35 @@ main{
   :root{
     font-size: 100%;
   }
+  .header{
+    overflow: hidden;
+  }
+  .intro-div{
+    padding: 3rem 0 0 0;
+    overflow: hidden;
+  }
   .intro-section{
     grid-template-areas: 'image heading' 'image explanation';
     max-width: 950px;
     grid-row-gap: 0.8em;
     margin: 3em 1em 0 2em;
+
   }
   .intro-image{
     grid-area: image;
     max-height: 22rem;
-    max-width: 16rem;
+    max-width: 18rem;
     object-fit: cover;
+    height: 100%;
+    width: inherit;
   }
   .intro-heading{
     grid-area: heading;
     font-size: 2.8rem;
-    line-height: 1;
+    line-height: 1.3;
     letter-spacing: -2px;
     word-spacing: -5px;
+    padding: 0;
   }
   .intro-explanation{
     grid-area: explanation;
@@ -405,6 +424,7 @@ main{
   }
   .sub-div{
     width: 100%;
+    padding: 1rem 0;
   }
   .sub-header{
     padding: 0;
