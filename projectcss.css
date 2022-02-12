@@ -170,8 +170,8 @@ main{
   font-family: Alaska,sans-serif;
 }
 .sub-button{
-  padding: 0.5em 1.5em;
-  margin: 0 1.5em;
+  padding: 0.5rem 1.5rem;
+  margin: 0 1.5rem;
   text-decoration: none;
   background: rgb(221, 14, 66);
   width: max-content;
@@ -398,7 +398,7 @@ main{
     grid-template-areas: 'image heading' 'image explanation';
     max-width: 950px;
     grid-row-gap: 0.8em;
-    margin: 3em 1em 0 2em;
+    margin: 3rem 1rem 0 2rem;
 
   }
   .intro-image{
